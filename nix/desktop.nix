@@ -1,3 +1,4 @@
+# everything desktop related
 { config, lib, pkgs, ... }:
 
 {
@@ -22,11 +23,15 @@
     pulseaudio-ctl
   ];
 
+  # Configure keymap in X11
+
   services.xserver = {
     enable = true;
+
     desktopManager = {
       xterm.enable = false;
     };
+
     displayManager = {
       defaultSession = "none+i3";
     };
@@ -41,7 +46,10 @@
       ];
     };
 
-    videoDrivers = ["nvidia"];
+    xkb = {
+      layout = "lv";
+      variant = "";
+    };
   };
 
   services.displayManager.sddm.enable = true;

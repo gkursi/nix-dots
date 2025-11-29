@@ -1,24 +1,39 @@
 My nixos configuration
 
 ## Usage
-Clone this repo and add `include.nix` to your main configuration
+1. clone this repo
+2. add `include.nix` to your main configuration
 ```nix
-...
-{
-  imports =
-    [
-      ./hardware-configuration.nix
-      ...
-      ./nix-dots/include.nix
-    ];
   ...
-}
+  {
+    imports = [
+        ./hardware-configuration.nix
+        ...
+        ./nix-dots/include.nix
+      ];
+    ...
+  }
 ```
+This will produce a (somewhat) minimal x11/i3 system with alacritty.
+
+3. add a profile to your configuration (e.g. `./nix-dots/nix/profiles/default.nix`)
+```nix
+  ...
+  {
+    imports = [
+        ./hardware-configuration.nix
+        ...
+        ./nix-dots/include.nix
+        ./nix-dots/nix/profiles/default.nix
+      ];
+    ...
+  }
+```
+Custom profiles can be built by including different [components](./nix/profiles/components).
 
 > [!WARNING]
 > The config doesn't contain `system.stateVersion` or the hardware configuration
-> and thus cannot be used without including it in a functional config.
+> and cannot be used without including it in a functional config.
 
 > [!NOTE]
-> The `nix/hardware.nix` file includes drivers for nvidia as well as pipewire (which overrides pulseaudio)
-> You might want to disable that in `include.nix`
+> By default, only nvidia drivers are included.
