@@ -1,7 +1,12 @@
 { config, lib, pkgs, ... }:
 
 {
-  ### Audio
+  environment.systemPackages = [
+    pkgs.playerctl
+    pkgs.pavucontrol
+    pkgs.pulseaudio-ctl
+  ];
+
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {

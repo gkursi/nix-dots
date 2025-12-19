@@ -6,5 +6,7 @@
     pkgs.gcc
     pkgs.file
     pkgs.vlc
+    pkgs.feh
+    pkgs.jq
   ];
 }

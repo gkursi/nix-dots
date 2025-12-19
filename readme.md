@@ -34,6 +34,3 @@ Custom profiles can be built by including different [components](./nix/profiles/
 > [!WARNING]
 > The config doesn't contain `system.stateVersion` or the hardware configuration
 > and cannot be used without including it in a functional config.
-
-> [!NOTE]
-> By default, only nvidia drivers are included.

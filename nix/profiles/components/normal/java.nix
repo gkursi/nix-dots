@@ -5,6 +5,6 @@
   environment.systemPackages = [
     pkgs.jetbrains.idea-community-bin
     pkgs.bytecode-viewer
-    (pkgs.jdk24 /*.override { enableJavaFX = true; }*/)
+    (pkgs.jdk21 /*.override { enableJavaFX = true; }*/)
   ];
 }

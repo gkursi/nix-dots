@@ -10,6 +10,9 @@
     ./system/loader.nix
     ./system/locale.nix
     ./system/users.nix
+    ./system/security.nix
+
+    ./home/home-manager.nix # todo: split up
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

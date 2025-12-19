@@ -8,5 +8,6 @@
     pkgs.ripgrep
     pkgs.fd
     pkgs.ncdu
+    pkgs.bat
   ];
 }

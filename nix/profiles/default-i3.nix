@@ -14,8 +14,8 @@
     ./components/based/file.nix
     ./components/based/alias.nix
 
-    ./components/desktop/wayland/base.nix
-    ./components/desktop/wayland/niri.nix
+    ./components/desktop/x11/base.nix
+    ./components/desktop/x11/i3.nix
     ./components/desktop/common/qt.nix
     ./components/desktop/common/screenshot.nix
     ./components/desktop/common/notification.nix
