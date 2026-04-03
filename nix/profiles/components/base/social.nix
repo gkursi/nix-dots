@@ -6,5 +6,6 @@
     pkgs.vesktop
     pkgs.spotify
     pkgs.firefox
+    pkgs.element-desktop
   ];
 }

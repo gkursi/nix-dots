@@ -8,6 +8,7 @@
     pkgs.xdotool
     pkgs.xorg.libXrender
     pkgs.rofi
+    pkgs.libxrender
   ];
 
   services.xserver = {
