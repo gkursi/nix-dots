@@ -16,6 +16,7 @@
 
     desktopManager = {
       xterm.enable = false;
+      wallpaper.mode = "center";
     };
 
     xkb = {
