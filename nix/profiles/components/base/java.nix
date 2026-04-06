@@ -3,7 +3,7 @@
 
 {
   environment.systemPackages = [
-    pkgs.jetbrains.idea-community-bin
+    pkgs.jetbrains.idea
     pkgs.recaf-launcher
     (pkgs.jdk21 /*.override { enableJavaFX = true; }*/)
   ];

@@ -11,6 +11,7 @@
     ./system/locale.nix
     ./system/users.nix
     ./system/security.nix
+    ./system/font.nix
 
     ./home/home-manager.nix # todo: split up
   ];

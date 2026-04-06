@@ -14,7 +14,7 @@ My nixos configuration
     ...
   }
 ```
-This will produce a (somewhat) minimal x11/i3 system with alacritty.
+This will produce a (somewhat) minimal system.
 
 3. add a profile to your configuration (e.g. `./nix-dots/nix/profiles/default.nix`)
 ```nix
@@ -30,7 +30,3 @@ This will produce a (somewhat) minimal x11/i3 system with alacritty.
   }
 ```
 Custom profiles can be built by including different [components](./nix/profiles/components).
-
-> [!WARNING]
-> The config doesn't contain `system.stateVersion` or the hardware configuration
-> and cannot be used without including it in a functional config.

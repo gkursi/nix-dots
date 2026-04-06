@@ -8,6 +8,7 @@
     ./components/base/extra-file.nix
     ./components/base/file.nix
     ./components/base/game.nix
+    ./components/base/i2p.nix
     ./components/base/java.nix
     ./components/base/misc.nix
     ./components/base/pretty.nix

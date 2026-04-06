@@ -2,12 +2,13 @@
 { config, lib, pkgs, ... }:
 
 {
-    imports = [ <home-manager/nixos> ];
     home-manager.users.qweru = {
         services.picom = {
             enable = true;
             extraConfig = ''
-                backend = "xrender"
+                backend = "glx";
+		
+		corner-radius = 5;
 
                 fading = true;
                 fade-in-step = 0.06;
