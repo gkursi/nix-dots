@@ -2,6 +2,9 @@
 
 {
   imports = [
+    ./components/theme/definition.nix # todo move to main
+    ./components/theme/gruvbox-dark.nix
+
     ./components/base/arrpc.nix
     ./components/base/c.nix
     ./components/base/editor.nix
@@ -14,11 +17,13 @@
     ./components/base/pretty.nix
     ./components/base/social.nix
     ./components/base/vsc.nix
+    ./components/base/spicetify.nix
 
     ./components/desktop/x11/base.nix
     ./components/desktop/x11/i3.nix
     ./components/desktop/x11/picom.nix
     ./components/desktop/x11/paperview.nix
+    ./components/desktop/x11/rofi.nix
     ./components/desktop/common/qt.nix
     ./components/desktop/common/screenshot.nix
     ./components/desktop/common/notification.nix

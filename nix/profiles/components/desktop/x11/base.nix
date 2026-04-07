@@ -7,7 +7,6 @@
     pkgs.xclip
     pkgs.xdotool
     pkgs.xorg.libXrender
-    pkgs.rofi
     pkgs.libxrender
   ];
 
@@ -24,4 +23,5 @@
       variant = "";
     };
   };
+
 }
